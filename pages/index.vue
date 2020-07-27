@@ -1,14 +1,18 @@
 <template>
-  <section class="container">
-    
-    
-    <p>name: {{ user.name }}</p>
-    <p>email: {{ user.email }}</p>
 
-    <v-avatar size="100">
-      <img :src="user.image" alt="Pavel">
-    </v-avatar>
-  </section>
+    <v-container>
+      <v-row>
+        <v-col cols="12">
+          <v-avatar size="100">
+            <img :src="user.image" alt="Pavel">
+          </v-avatar>
+        </v-col>
+        <v-col cols="12">
+          <p >name: {{ user.name }}</p>
+          <p>email: {{ user.email }}</p>
+        </v-col>
+      </v-row>
+    </v-container>
 </template>
 
 <script>
